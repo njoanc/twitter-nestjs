@@ -35,7 +35,7 @@ export class ReplyTable1620378141541 implements MigrationInterface {
     ],
   });
   private foreignKey = new TableForeignKey({
-    columnNames: ['user_id', 'tweet_id'],
+    columnNames: ['user_id'],
     referencedColumnNames: ['id'],
     onDelete: 'CASCADE',
     referencedTableName: 'users',

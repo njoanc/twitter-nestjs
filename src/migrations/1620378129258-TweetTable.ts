@@ -11,7 +11,7 @@ export class TweetTable1620378129258 implements MigrationInterface {
     columns: [
       {
         name: 'id',
-        type: 'int4',
+        type: 'INTEGER',
         isPrimary: true,
         isGenerated: true,
         generationStrategy: 'increment',
@@ -37,7 +37,7 @@ export class TweetTable1620378129258 implements MigrationInterface {
   });
   public async up(queryRunner: QueryRunner): Promise<any> {
     await queryRunner.createTable(this.tweetTable);
-    await queryRunner.createForeignKey('tweet_id', this.foreignKey);
+    await queryRunner.createForeignKey('tweets', this.foreignKey);
   }
 
   public async down(queryRunner: QueryRunner): Promise<any> {
