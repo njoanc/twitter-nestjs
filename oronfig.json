@@ -1,0 +1,15 @@
+{
+"type":"mysql",
+"host":"remotemysql.com",
+"port":3306,
+"username":"XAxynMIRec",
+"password":"1jagj89Fmt",
+"database":"XAxynMIRec",
+"entities":["src/models/*.entity{.ts,.js}"],
+"synchronize": false,
+"migrationsRun": true,
+"migrations ":["src/migrations/*{.ts,.js}"],
+"cli": {
+    "migrationsDir":"src/migrations"
+  }
+}
